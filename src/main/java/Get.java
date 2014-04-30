@@ -88,7 +88,7 @@ public class Get {
 				jobj = responseArray.getJSONObject(i);
 				projectname = jobj.getBoolean("demo");
 				restID=jobj.getInt("restaurant_id");
-				if(projectname){
+				if(projectname==false){
 					System.out.println("\n"+restID);
 					printOutput.println(restID);
 				}
